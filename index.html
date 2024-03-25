@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>電卓</title>
+    
+    <style>
+      body{
+        text-align: center;
+        margin-top: 20px;
+      }
+      #container{
+        display: inline-block;
+        background-color: black;
+        padding: 5px;
+      }
+      #result{
+        height: 30px;
+        background-color: black;
+        color: white;
+        text-align: right;
+        margin-right: 5px;
+        margin-top: 20px;
+        align-items: end;
+      }
+      table{
+        table-layout: fixed;
+      }
+      td{
+        width: 24px;
+        height: 24px;
+      }
+      button{
+        width: 100%;
+        height: 100%;
+        border: solid 1px rgb(88, 88, 88);
+        background-color: gray;
+        cursor: pointer;
+        color: white;
+        border-radius: 20px;
+      }
+      #enzan{
+        background-color: orange;
+      }
+      #kinou{
+        background-color: whitesmoke;
+        color: black;
+      }
+      button:active{
+        background-color: #e4e4e4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="result"></div>
+      <table>
+        <tbody>
+          <tr>
+            <td><button id = 'kinou'>AC</button></td>
+            <td><button id = 'kinou'>+/-</button></td>
+            <td><button id = 'kinou'>%</button></td>
+            <td><button id ="enzan">÷</button></td>
+          </tr>
+          <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button id = "enzan">×</button></td>
+          </tr>
+          <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button id = "enzan">-</button></td>
+          </tr>
+          <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button id = "enzan">+</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button>0</button></td>
+            <td><button>.</button></td>
+            <td><button id = "enzan">=</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <script src="main.js"></script>
+  </body>
+</html>
