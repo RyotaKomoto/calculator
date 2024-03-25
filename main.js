@@ -11,7 +11,7 @@ const buttons = document.querySelectorAll('button');
         } else if(text === '') {
           concatText = '0'
         }else if(text === 'AC') {
-          concatText = "0";
+          concatText = "";
         } else if(text === '%') {
           concatText = concatText / 100
         } else if(text === "+/-") {
